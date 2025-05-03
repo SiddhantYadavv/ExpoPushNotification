@@ -9,13 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier":"dev.expo.Notification"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package":"dev.expo.Notification",
+      "googleServicesFile":"./google-services.json"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +39,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "8cdf4051-b776-457a-ba9c-0c1cf8ca618e"
+      }
+    },
+    "owner": "siddhant_yadav"
   }
 }
